@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://www.cnblogs.com/dmeck/p/8456034.html -->
+<html lang="zh-cn"><head>
+{% load static %}
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{thisarticle.title}} - 博客小站</title>
+<link type="text/css" rel="stylesheet" href={% static "css/blog-common.css" %}>
+<link id="MainCss" type="text/css" rel="stylesheet" href={% static "css/bundle-summerGarden.css" %}>
+<link type="text/css" rel="stylesheet" href={% static "css/412198.css" %}>
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href={% static "css/bundle-summerGarden-mobile.css" %}>
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/dmeck/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/dmeck/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/dmeck/wlwmanifest.xml">
+<script async="" src={% static "css/analytics.js" %}></script><script src={% static "css/jquery-2.2.0.min.js" %}></script>
+<script type="text/javascript">var currentBlogApp = 'dmeck', cb_enable_mathjax=false;var isLogined=false;</script>
+<script src={% static "css/blog-common.js" %}type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="http://www.cnblogs.com/dmeck/"><img id="blogLogo" src="./css/logo.gif" alt="返回主页"></a>			
+		
+<!--done-->
+<h1>{{thisarticle.author}}</h1>
+<h2></h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+	
+	<li><a id="blog_nav_myhome" class="menu" href="/">首页</a></li>
+	<li><a href="/list">博文列表</a></li>
+	<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="/postarticles">发博文</a></li>
+	
+</ul>
+
+
+		<div class="blogStats">
+			
+			<div id="blog_stats">
+<!--done-->
+随笔- 1&nbsp;
+文章- 0&nbsp;
+评论- 0&nbsp;
+</div>
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class="post">
+		<h1 class="postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="/articles/{{thisarticle.id}}">{{thisarticle.title}}</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body" class="blogpost-body">
+		{{thisarticle.content | safe}}
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器--><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright ©2018 Visitors
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+</body></html>

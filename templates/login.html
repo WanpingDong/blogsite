@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+<meta charset=utf-8>
+<title>登录系统-博客小站</title></head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    姓名：<input name="name"/><br />
+    密码:<input name="passwd"><br />
+    <button type="submit">提交登录</button>
+</form>
+</body>
+</html>
